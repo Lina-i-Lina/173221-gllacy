@@ -12,8 +12,8 @@
 
 <body>
   <input type="radio" id="btn-1" name="toggle" checked>
-              <input type="radio" id="btn-2" name="toggle">
-              <input type="radio" id="btn-3" name="toggle">
+  <input type="radio" id="btn-2" name="toggle">
+  <input type="radio" id="btn-3" name="toggle">
   <div class="site-wrapper">
     <div class="content-wrapper">
 
@@ -36,21 +36,17 @@
             </ul>
           </nav>
           <div class="user-block">
-
-              <a class="search" href="#"></a>
-              <a class="login" href="#">Вход</a>
-              <a class="cart" href="#">Пусто</a>
-
+            <a class="search" href="#"></a>
+            <a class="login" href="#">Вход</a>
+            <a class="cart" href="#">Пусто</a>
           </div>
         </div>
       </header>
       <main>
         <div class="container">
           <div class="worktime clearfix">
-            <p>С 10 до 20,ежедневно</p>
-            <a href="tel:88124502525">
-              <span class=number>8 812 450-25-25</span>
-            </a>
+            <span>С 10 до 20,ежедневно</span>
+            <span class="number">8 812 450-25-25</span>
           </div>
           <div class="slider clearfix">
             <div class="slide" id="slide1">
@@ -75,46 +71,48 @@
               <div class="berry-gift">
                 <h2>Малинка даром!</h2>
                 <p>При покупке 2 кг любого фруктого мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a class="btn" href="#">Хочу варенье!</a>
+                <a class="btn btn-gift" href="#">Хочу варенье!</a>
               </div>
               <div class="choco-gift">
                 <h2>Шоколадки даром!</h2>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-                <a class="btn" href="#">Хочу шоколадки!</a>
+                <a class="btn btn-gift" href="#">Хочу шоколадки!</a>
               </div>
             </div>
             <div class="bestseller clearfix">
               <div class="best">
-                <figure class="best-hit">
+                <article class="best-hit">
                   <img src="../img/orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  <figcaption>310₽/кг</figcaption>
-                </figure>
-                <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                  <span class="price">310₽/кг</span>
+                  <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                </article>
               </div>
               <div class="best">
-                <figure class="best-hit">
+                <article class="best-hit">
                   <img src="../img/coffee.png" alt="Сливочно-кофейное с кусочками шоколада">
-                  <figcaption>380₽/кг</figcaption>
-                </figure>
-                <p>Сливочно-кофейное с кусочками шоколада</p>
+                  <span class="price">380₽/кг</span>
+                  <span>Сливочно-кофейное с кусочками шоколада</span>
+                </article>
               </div>
               <div class="best">
-                <figure class="best-hit">
+                <article class="best-hit">
                   <img src="../img/cream-strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                  <figcaption>355₽/кг</figcaption>
-                </figure>
-                <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                  <span class="price">355₽/кг</span>
+                  <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+                </article>
               </div>
               <div class="best">
-                <figure class="best-hit">
+                <article class="best-hit">
                   <img src="../img/creme-brulee.png" alt="Сливочное крем-брюле с карамельной подливкой">
-                  <figcaption>415₽/кг</figcaption>
-                </figure>
-                <p>Сливочное крем-брюле с карамельной подливкой</p>
+                  <span class="price">415₽/кг</span>
+                  <span>Сливочное крем-брюле с карамельной подливкой</span>
+                </article>
               </div>
             </div>
             <div class="features clearfix">
+            <div class="features-title">
               <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+              </div>
               <div class="features-leftside">
                 <div class="features-item">
                   <p>Все наше мороженое изготавливается на собственном производстве,с использованием современного оборудования и проверенных временем технологий.</p>
@@ -131,11 +129,12 @@
                   <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
                 </div>
               </div>
+
             </div>
             <div class="blog-post clearfix">
               <div class="blog">
                 <span>Новое в нашем блоге</span>
-                <a class="btn" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                <a class="link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
               </div>
               <div class="post">
                 <span>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного,что у нас происходит.Обещаем не спамить и не слать всякой не нужной ерунды.Честно =) </span>
@@ -174,7 +173,7 @@
           </section>
           <section class="information">
             <div class=provider>
-              <span><a href="#">Для поставщиков</a></span>
+              <a href="#">Для поставщиков</a>
             </div>
             <a href="#">О производстве</a>
           </section>
@@ -191,6 +190,15 @@
         </div>
       </footer>
     </div>
+  </div>
+  <div class="modal-content">
+  <form class="login-form" action="#" method="post">
+        <input class="icon-user" type="text" name="mail" placeholder="Электронная почта">
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+        <a class="restore" href="#">Забыли пароль?</a>
+        <a class="registration" href="#">Новая регистрация</a>
+        <button class="btn btn-login-form" type="submit">Войти</button>
+      </form>
   </div>
 </body>
 

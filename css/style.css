@@ -97,13 +97,24 @@ body > input[type="radio"] {
   text-decoration: none;
 }
 
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 55px;
+  width: 22px;
+  height: 22px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -15px -20px;
+}
+
 .login {
   position: relative;
   display: inline-block;
   padding: 9px 15px 9px 45px;
   font-size: 14px;
-  line-height: 18px;
   vertical-align: top;
+  line-height: 18px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -111,12 +122,12 @@ body > input[type="radio"] {
 .login::before {
   content: "";
   position: absolute;
-  top: 8px;
-  right: 56px;
-  width: 21px;
-  height: 20px;
+  top: 14px;
+  right: 55px;
+  width: 22px;
+  height: 22px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -12px -125px;
+  background-position: -8px -125px;
 }
 
 .search {
@@ -125,14 +136,62 @@ body > input[type="radio"] {
   padding: 8px 8px;
 }
 
+.search::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 22px;
+  height: 22px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -10px -407px;
+}
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.btn-gift {
+  margin-bottom: 25px;
+  margin-left: 330px;
+}
+
 .worktime {
+  display: inline-block;
   float: right;
+  font-size: 14px;
+  text-align: right;
+
+}
+
+.number {
+  display: inline-block;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: right;
+
 }
 
 .slider {
@@ -232,11 +291,9 @@ body > input[type="radio"] {
 }
 
 .berry-gift {
-  display: inline-block;
   float: left;
   width: 520px;
-  padding: 18px 20px;
-  margin-right: 26px;
+  padding: 0 20px;
   background-image: url("../img/raspberries.png");
 
 }
@@ -244,7 +301,7 @@ body > input[type="radio"] {
 .choco-gift {
   float: left;
   width: 520px;
-  padding: 18px 20px;
+  padding: 0 20px;
   background-image: url(../img/chokolate.png);
 
 }
@@ -278,21 +335,49 @@ body > input[type="radio"] {
   margin-right: 0;
 }
 
+.best-hit {
+  position: relative;
+}
+
+.best-hit::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background: url("..img/sprite.png") no-repeat;
+  background-position: -10px -240px;
+}
+
 .features {
   padding: 25px 20px;
   margin-bottom: 40px;
   background-image: url("../img/wafer.jpg");
   color: #323232;
+  border-radius: 20px;
+  position: relative;
 }
 
 .features-leftside {
   float: left;
-  width: 540px;
+  width: 560px;
 }
 
 .features-rightside {
   float: right;
   width: 540px;
+}
+
+.features-title {
+  text-align: left;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features-item {
+  text-align: left;
+  padding-left: 70px;
 }
 
 .blog-post {
@@ -313,6 +398,7 @@ body > input[type="radio"] {
 
 .blog a {
   color: #353535;
+  text-decoration: none;
 }
 
 .post {
@@ -320,6 +406,7 @@ body > input[type="radio"] {
   width: 560px;
   background-image: url("../img/post.png");
   height: 220px;
+  color:#323232;
 }
 
 .map {
@@ -339,10 +426,39 @@ body > input[type="radio"] {
   width: 186px;
 }
 
+.social-btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: url("../img/sprite.png") no-repeat center;
+}
+
+.social-btn-tw {
+  background-position: -5px -605px;
+}
+
+.social-btn-inst {
+  background-position: -5px -383px;
+}
+
+.social-btn-fb {
+  background-position: -5px -151px;
+}
+
+.social-btn-vk {
+  background-position: -5px -656px;
+}
+
+
 .information {
   float: left;
   margin-right: 30px;
   width: 250px;
+  color: #ffffff;
+  font-size: 13px;
 }
 
 .document {
@@ -352,6 +468,7 @@ body > input[type="radio"] {
 
 .developer {
   float: right;
+  font-size: 13px;
 }
 
 .breadcrumbs li {
@@ -418,4 +535,35 @@ body > input[type="radio"] {
   display: inline-block;
   float: right;
   margin-bottom: 38px;
+}
+
+.modal-content {
+  position: absolute;
+  top: 70px;
+  left: 1580px;
+  width: 275px;
+  height: 177px;
+  padding: 20px 16px 17px 17px;
+  border-radius: 15px;
+  background-color: #f8f7f4;
+  color: 686766;
+  font-size: 13px;
+  line-height: 24,3px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 12px 15px;
+  width: 243px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.btn-login-form {
+  margin-right: 157px;
+}
+
+.registration,
+.restore {
+  margin-top: 18px;
 }
