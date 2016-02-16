@@ -100,12 +100,12 @@ body > input[type="radio"] {
 .cart::before {
   content: "";
   position: absolute;
-  top: 14px;
-  right: 55px;
+  top: 8px;
+  right: 58px;
   width: 22px;
   height: 22px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -15px -20px;
+  background-position: -11px -12px;
 }
 
 .login {
@@ -122,29 +122,32 @@ body > input[type="radio"] {
 .login::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 8px;
   right: 55px;
   width: 22px;
   height: 22px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -8px -125px;
+  background-position: -8px -118px;
 }
 
 .search {
   position: relative;
-  display: inline-block;
-  padding: 8px 8px;
+    display: inline-block;
+
+
 }
 
 .search::before {
   content: "";
   position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 22px;
-  height: 22px;
+  top: -14px;
+  right: -5px;
+  width: 30px;
+  height: 30px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -10px -407px;
+  background-position: -6px -434px;
+  background-color: #9db1a5;
+  border-radius: 100px;
 }
 
 .clearfix::after {
@@ -292,6 +295,7 @@ body > input[type="radio"] {
 
 .berry-gift {
   float: left;
+  margin-right: 24px;
   width: 520px;
   padding: 0 20px;
   background-image: url("../img/raspberries.png");
@@ -339,15 +343,33 @@ body > input[type="radio"] {
   position: relative;
 }
 
-.best-hit::before {
+.best-hit::after {
   content: "";
   position: absolute;
   width: 60px;
   height: 60px;
   top: 0;
   left: 0;
-  background: url("..img/sprite.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat;
   background-position: -10px -240px;
+}
+
+.price {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.price::before {
+  content: "";
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+}
+
+.measure {
+  position: relative;
+  font-size: 22px
 }
 
 .features {
@@ -437,7 +459,7 @@ body > input[type="radio"] {
 }
 
 .social-btn-tw {
-  background-position: -5px -605px;
+  background-position: -7px -605px;
 }
 
 .social-btn-inst {
@@ -531,13 +553,24 @@ body > input[type="radio"] {
   margin-bottom: 75px;
 }
 
-.pages li {
+.pages {
   display: inline-block;
   float: right;
-  margin-bottom: 38px;
+  margin-top: -40px;
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.modal-content {
+.page .current {
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.modal-content-login {
   position: absolute;
   top: 70px;
   left: 1580px;
@@ -563,7 +596,63 @@ body > input[type="radio"] {
   margin-right: 157px;
 }
 
-.registration,
+.registration {
+  margin-top: 18px;
+}
+
 .restore {
   margin-top: 18px;
+}
+
+.modal-content-mail {
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  margin-left: -240px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  width: 478px;
+  height: 444px;
+  padding-top: 22px;
+  padding-left: 25px;
+
+}
+
+.modal-content-mail span {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 600;
+
+}
+
+.modal-content-close {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+}
+.message .name {
+  margin-top: 26px;
+  margin-bottom: 22px;
+  width: 267px;
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+
+.message .e-mail {
+  margin-bottom: 22px;
+  width: 267px;
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+
+
+.message .write-to-us {
+  padding: 12px 15px;
+  width: 267px;
+  height: 155px;
+
 }
