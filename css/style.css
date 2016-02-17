@@ -64,12 +64,37 @@ body > input[type="radio"] {
   font-size: 16px;
   margin-top: 26px;
   vertical-align: top;
+  position: relative;
 }
 
 .navigation a {
   display: block;
   color: #ffffff;
   padding-right: 25px;
+}
+
+.navigation li a:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+}
+
+ul .dropdown-inside,
+ul .navigation {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul .dropdown-inside {
+  position: absolute;
+  left: -9999px;
+}
+
+.drop-down-list {
+  display: none;
+}
+
+.drop-down-list:hover {
+  display: block;
 }
 
 .user-block {
@@ -84,7 +109,6 @@ body > input[type="radio"] {
   border-radius: 100px;
   margin-left: 10px;
 }
-
 
 .cart {
   position: relative;
@@ -130,11 +154,25 @@ body > input[type="radio"] {
   background-position: -8px -118px;
 }
 
+.login:hover {
+  background-color: #f8f7f4;
+  color: #373737;
+}
+
+.login:hover::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 55px;
+  width: 22px;
+  height: 22px;
+  background: url("../img/sprite2.png") no-repeat;
+  background-position: -10px -48px;
+}
+
 .search {
   position: relative;
-    display: inline-block;
-
-
+  display: inline-block;
 }
 
 .search::before {
@@ -148,6 +186,19 @@ body > input[type="radio"] {
   background-position: -6px -434px;
   background-color: #9db1a5;
   border-radius: 100px;
+}
+
+.search:hover::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  right: -5px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/sprite2.png") no-repeat;
+  background-position: -6px -7px;
+  background-color: #f8f7f4;
+  color: #373737;
 }
 
 .clearfix::after {
@@ -167,9 +218,9 @@ body > input[type="radio"] {
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
@@ -184,7 +235,6 @@ body > input[type="radio"] {
   float: right;
   font-size: 14px;
   text-align: right;
-
 }
 
 .number {
@@ -194,7 +244,6 @@ body > input[type="radio"] {
   text-decoration: none;
   font-weight: 600;
   text-align: right;
-
 }
 
 .slider {
@@ -231,20 +280,19 @@ body > input[type="radio"] {
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .slide-btn:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-
 
 .slider-controls {
   position: absolute;
@@ -299,7 +347,6 @@ body > input[type="radio"] {
   width: 520px;
   padding: 0 20px;
   background-image: url("../img/raspberries.png");
-
 }
 
 .choco-gift {
@@ -307,7 +354,6 @@ body > input[type="radio"] {
   width: 520px;
   padding: 0 20px;
   background-image: url(../img/chokolate.png);
-
 }
 
 .berry-gift h2,
@@ -428,7 +474,7 @@ body > input[type="radio"] {
   width: 560px;
   background-image: url("../img/post.png");
   height: 220px;
-  color:#323232;
+  color: #323232;
 }
 
 .map {
@@ -473,7 +519,6 @@ body > input[type="radio"] {
 .social-btn-vk {
   background-position: -5px -656px;
 }
-
 
 .information {
   float: left;
@@ -570,9 +615,29 @@ body > input[type="radio"] {
   border-radius: 50px;
 }
 
+.modal-content-search {
+  position: absolute;
+  top: 65px;
+  left: 1440px;
+  width: 346px;
+  height: 69px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  display: none;
+
+}
+
+.search-form input[type="text"] {
+  width: 310px;
+  margin: 16px;
+  border-radius: 10px;
+  height: 39px;
+  padding-left: 10px;
+}
+
 .modal-content-login {
   position: absolute;
-  top: 70px;
+  top: 65px;
   left: 1580px;
   width: 275px;
   height: 177px;
@@ -581,27 +646,41 @@ body > input[type="radio"] {
   background-color: #f8f7f4;
   color: 686766;
   font-size: 13px;
-  line-height: 24,3px;
+  line-height: 24, 3px;
+  display: none;
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
   padding: 12px 15px;
   width: 243px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   border-radius: 10px;
 }
 
 .btn-login-form {
-  margin-right: 157px;
+  width: 100px;
+  position: relative;
 }
 
 .registration {
-  margin-top: 18px;
+  width: 125px;
+  position: absolute;
+  content: "";
+  left: 138px;
+  bottom: 30px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .restore {
-  margin-top: 18px;
+  width: 125px;
+  position: absolute;
+  content: "";
+  left: 138px;
+  bottom: 60px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .modal-content-mail {
@@ -615,14 +694,12 @@ body > input[type="radio"] {
   height: 444px;
   padding-top: 22px;
   padding-left: 25px;
-
 }
 
 .modal-content-mail span {
   font-size: 24px;
   color: #343434;
   font-weight: 600;
-
 }
 
 .modal-content-close {
@@ -634,6 +711,7 @@ body > input[type="radio"] {
   height: 18px;
   font-size: 0;
 }
+
 .message .name {
   margin-top: 26px;
   margin-bottom: 22px;
@@ -649,10 +727,9 @@ body > input[type="radio"] {
   padding: 12px 15px;
 }
 
-
 .message .write-to-us {
   padding: 12px 15px;
   width: 267px;
   height: 155px;
-
+  vertical-align: top;
 }
