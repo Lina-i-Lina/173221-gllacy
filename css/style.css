@@ -401,20 +401,13 @@ ul .dropdown-inside {
 }
 
 .price {
-  position: relative;
+  position: absolute;
   font-size: 30px;
   font-weight: 700;
 }
 
-.price::before {
-  content: "";
-  position: absolute;
-  bottom: 90px;
-  left: 0;
-}
-
 .measure {
-  position: relative;
+  position: absolute;
   font-size: 22px
 }
 
@@ -435,6 +428,7 @@ ul .dropdown-inside {
 .features-rightside {
   float: right;
   width: 540px;
+
 }
 
 .features-title {
@@ -447,6 +441,11 @@ ul .dropdown-inside {
   text-align: left;
   padding-left: 70px;
 }
+
+.features-item p {
+  position: relative;
+}
+
 
 .blog-post {
   margin-bottom: 40px;
@@ -471,10 +470,29 @@ ul .dropdown-inside {
 
 .post {
   float: left;
-  width: 560px;
+  width: 484px;
   background-image: url("../img/post.png");
-  height: 220px;
   color: #323232;
+  padding: 36px 47px 28px 28px;
+}
+
+.mail input[type="email"] {
+  min-width: 345px;
+  min-height: 45px;
+  margin-top: 42px;
+  margin-left: 0;
+  float: left;
+  border-radius: 30px;
+}
+
+.mail button[type="submit"] {
+  float: right;
+  width: 130px;
+  margin-top: 40px;
+}
+
+.post span {
+  text-align: left;
 }
 
 .map {
@@ -482,6 +500,28 @@ ul .dropdown-inside {
   margin-bottom: 18px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.coords {
+  width: 302px;
+  margin: 16px;
+  border-radius: 10px;
+  height: 306px;
+  padding-left: 25px;
+  padding-top: 32px;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  background: #fdfefe;
+  color: #343434;
+}
+
+.btn-feedback {
+  width: 252px;
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
 }
 
 .footer {
@@ -694,6 +734,7 @@ ul .dropdown-inside {
   height: 444px;
   padding-top: 22px;
   padding-left: 25px;
+  display: none;
 }
 
 .modal-content-mail span {
@@ -705,11 +746,29 @@ ul .dropdown-inside {
 .modal-content-close {
   position: absolute;
   content: "";
-  top: 0;
-  right: 0;
+  top: 15px;
+  left: 460px;
   width: 18px;
   height: 18px;
   font-size: 0;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #070707;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
 }
 
 .message .name {
@@ -729,7 +788,14 @@ ul .dropdown-inside {
 
 .message .write-to-us {
   padding: 12px 15px;
-  width: 267px;
-  height: 155px;
+  width: 430px;
+  height: 145px;
   vertical-align: top;
+  border-radius: 10px;
+}
+
+.btn-writetous {
+  position: absolute;
+  top: 395px;
+  right: 30px;
 }
