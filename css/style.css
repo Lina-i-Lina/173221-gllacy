@@ -402,13 +402,16 @@ ul .dropdown-inside {
 
 .price {
   position: absolute;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 600;
+  top: 200px;
+  left: 0;
 }
 
 .measure {
   position: absolute;
-  font-size: 22px
+  font-size: 22px;
+  top: 10px;
 }
 
 .features {
@@ -417,6 +420,7 @@ ul .dropdown-inside {
   background-image: url("../img/wafer.jpg");
   color: #323232;
   border-radius: 20px;
+  height: 310px;
   position: relative;
 }
 
@@ -428,7 +432,6 @@ ul .dropdown-inside {
 .features-rightside {
   float: right;
   width: 540px;
-
 }
 
 .features-title {
@@ -442,10 +445,44 @@ ul .dropdown-inside {
   padding-left: 70px;
 }
 
-.features-item p {
-  position: relative;
+.ice,
+.thermometr,
+.sheet,
+.cow {
+  width: 485px;
 }
 
+.features-ice {
+  position: absolute;
+  background: url("../img/sprite.png") no-repeat;
+  left: 10px;
+  top: 145px;
+  background-position: -5px -297px;
+}
+
+.features-sheet {
+  position: absolute;
+  background: url("../img/sprite.png") no-repeat;
+  left: 10px;
+  top: 220px;
+  background-position: -5px -450px;
+}
+
+.features-cow {
+  position: absolute;
+  background: url("../img/sprite.png") no-repeat;
+  left: 577px;
+  top: 145px;
+  background-position: -5px -297px;
+}
+
+.features-thermometr {
+  position: absolute;
+  background: url("../img/sprite.png") no-repeat;
+  left: 577px;
+  top: 220px;
+  background-position: -5px -450px;
+}
 
 .blog-post {
   margin-bottom: 40px;
@@ -657,14 +694,18 @@ ul .dropdown-inside {
 
 .modal-content-search {
   position: absolute;
-  top: 65px;
-  left: 1440px;
+  top: 20px;
+  right: -5px;
   width: 346px;
   height: 69px;
   background-color: #f8f7f4;
   border-radius: 10px;
   display: none;
 
+}
+
+.search:hover .modal-content-search{
+  display: block;
 }
 
 .search-form input[type="text"] {
