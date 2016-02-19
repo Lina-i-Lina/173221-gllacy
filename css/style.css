@@ -6,9 +6,6 @@ body {
   background-color: #849d8f;
 }
 
-* {
-  outline: 1px solid black;
-}
 
 body > input[type="radio"] {
   display: none;
@@ -48,29 +45,36 @@ body > input[type="radio"] {
   margin-top: 9px;
   width: 153px;
   height: 63px;
+  margin-left: -5px;
 }
 
 .main-navigation {
   float: left;
   min-height: 64px;
   max-width: 412px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
   font-size: 0;
 }
 
 .navigation li {
   display: inline-block;
-  line-height: 22px;
+  line-height: 20px;
   list-style: none;
   font-size: 16px;
-  margin-top: 26px;
+  margin-top: 32px;
   vertical-align: top;
   position: relative;
+  margin-right: 0;
 }
 
 .navigation a {
   display: block;
   color: #ffffff;
-  padding-right: 25px;
+  margin-left: 28px;
 }
 
 .navigation li a:hover {
@@ -100,7 +104,7 @@ ul .dropdown-inside {
 .user-block {
   float: right;
   max-width: 573px;
-  margin-top: 23px;
+  margin-top: 25px;
 }
 
 .user-block a {
@@ -113,45 +117,47 @@ ul .dropdown-inside {
 .cart {
   position: relative;
   display: inline-block;
-  padding: 9px 15px 9px 45px;
+  padding: 8px 15px 8px 45px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
+  width: 57px;
 }
 
 .cart::before {
   content: "";
   position: absolute;
-  top: 8px;
-  right: 58px;
-  width: 22px;
+  top: 6px;
+  right: 70px;
+  width: 40px;
   height: 22px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -11px -12px;
+  background-position: -10px -342px;
 }
 
 .login {
   position: relative;
   display: inline-block;
-  padding: 9px 15px 9px 45px;
+  padding: 8px 15px 8px 45px;
   font-size: 14px;
   vertical-align: top;
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+  width: 30px;
 }
 
 .login::before {
   content: "";
   position: absolute;
-  top: 8px;
-  right: 55px;
-  width: 22px;
+  top: 6px;
+  right: 52px;
+  width: 32px;
   height: 22px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -8px -118px;
+  background-position: -10px -402px;
 }
 
 .login:hover {
@@ -166,8 +172,8 @@ ul .dropdown-inside {
   right: 55px;
   width: 22px;
   height: 22px;
-  background: url("../img/sprite2.png") no-repeat;
-  background-position: -10px -48px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -20px -77px;
 }
 
 .search {
@@ -183,7 +189,7 @@ ul .dropdown-inside {
   width: 30px;
   height: 30px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -6px -434px;
+  background-position: -15px -752px;
   background-color: #9db1a5;
   border-radius: 100px;
 }
@@ -195,8 +201,8 @@ ul .dropdown-inside {
   right: -5px;
   width: 30px;
   height: 30px;
-  background: url("../img/sprite2.png") no-repeat;
-  background-position: -6px -7px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -15px -15px;
   background-color: #f8f7f4;
   color: #373737;
 }
@@ -226,8 +232,15 @@ ul .dropdown-inside {
 }
 
 .btn-gift {
-  margin-bottom: 25px;
-  margin-left: 330px;
+
+  padding: 14px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  margin-left: 320px;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .worktime {
@@ -235,6 +248,8 @@ ul .dropdown-inside {
   float: right;
   font-size: 14px;
   text-align: right;
+  line-height: 15px;
+  margin-top: -10px;
 }
 
 .number {
@@ -244,11 +259,13 @@ ul .dropdown-inside {
   text-decoration: none;
   font-weight: 600;
   text-align: right;
+  line-height: 24px;
+  margin-top: -10px;
 }
 
 .slider {
   position: relative;
-  padding-top: 570px;
+  padding-top: 575px;
   text-align: center;
   color: #ffffff;
 }
@@ -256,8 +273,8 @@ ul .dropdown-inside {
 .slide {
   display: none;
   position: absolute;
-  top: 310px;
-  left: 225px;
+  top: 320px;
+  left: 220px;
 }
 
 .slide-title {
@@ -271,7 +288,7 @@ ul .dropdown-inside {
 
 .slide-btn {
   display: inline-block;
-  padding: 12px 50px;
+  padding: 12px 45px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -296,7 +313,7 @@ ul .dropdown-inside {
 
 .slider-controls {
   position: absolute;
-  top: 485px;
+  top: 495px;
   left: 0;
   z-index: 20;
   font-size: 0;
@@ -361,6 +378,7 @@ ul .dropdown-inside {
   font-size: 35px;
   text-align: left;
   font-weight: bold;
+
 }
 
 .berry-gift p,
@@ -368,6 +386,7 @@ ul .dropdown-inside {
   text-align: left;
   font-size: 18px;
   line-height: 22px;
+  vertical-align: top;
 }
 
 .stock {
@@ -378,7 +397,7 @@ ul .dropdown-inside {
   float: left;
   width: 267px;
   margin-right: 26px;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
 
 .best:last-child {
@@ -397,21 +416,30 @@ ul .dropdown-inside {
   top: 0;
   left: 0;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -10px -240px;
+  background-position: -20px -585px;
+}
+
+.description {
+  text-decoration: underline;
+  line-height: 20px;
+  position: absolute;
+  top: 285px;
+  left: 0;
 }
 
 .price {
   position: absolute;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 600;
-  top: 200px;
+  top: 226px;
   left: 0;
 }
 
 .measure {
   position: absolute;
   font-size: 22px;
-  top: 10px;
+  top: 5px;
+  left: 105px;
 }
 
 .features {
@@ -420,7 +448,7 @@ ul .dropdown-inside {
   background-image: url("../img/wafer.jpg");
   color: #323232;
   border-radius: 20px;
-  height: 310px;
+  height: 255px;
   position: relative;
 }
 
@@ -436,8 +464,10 @@ ul .dropdown-inside {
 
 .features-title {
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 30px;
+  position: absolute;
+  top: 0;
 }
 
 .features-item {
@@ -454,34 +484,34 @@ ul .dropdown-inside {
 
 .features-ice {
   position: absolute;
-  background: url("../img/sprite.png") no-repeat;
-  left: 10px;
-  top: 145px;
-  background-position: -5px -297px;
+  background: url("../img/sprite2.png") no-repeat;
+  left: 7px;
+  top: 95px;
+  background-position: -25px -152px;
 }
 
 .features-sheet {
   position: absolute;
-  background: url("../img/sprite.png") no-repeat;
-  left: 10px;
-  top: 220px;
-  background-position: -5px -450px;
+  background: url("../img/sprite2.png") no-repeat;
+  left: 7px;
+  top: 182px;
+  background-position: -25px -269px;
 }
 
 .features-cow {
   position: absolute;
-  background: url("../img/sprite.png") no-repeat;
-  left: 577px;
-  top: 145px;
-  background-position: -5px -297px;
+  background: url("../img/sprite2.png") no-repeat;
+  left: 574px;
+  top: 96px;
+  background-position: -25px -35px;
 }
 
 .features-thermometr {
   position: absolute;
-  background: url("../img/sprite.png") no-repeat;
-  left: 577px;
-  top: 220px;
-  background-position: -5px -450px;
+  background: url("../img/sprite2.png") no-repeat;
+  left: 576px;
+  top: 182px;
+  background-position: -25px -386px;
 }
 
 .blog-post {
@@ -519,7 +549,7 @@ ul .dropdown-inside {
   margin-top: 42px;
   margin-left: 0;
   float: left;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .mail button[type="submit"] {
@@ -528,8 +558,9 @@ ul .dropdown-inside {
   margin-top: 40px;
 }
 
-.post span {
+.post-span {
   text-align: left;
+  width: 508px;
 }
 
 .map {
@@ -582,19 +613,19 @@ ul .dropdown-inside {
 }
 
 .social-btn-tw {
-  background-position: -7px -605px;
+  background-position: -17px -917px;
 }
 
 .social-btn-inst {
-  background-position: -5px -383px;
+  background-position: -17px -681px;
 }
 
 .social-btn-fb {
-  background-position: -5px -151px;
+  background-position: -17px -456px;
 }
 
 .social-btn-vk {
-  background-position: -5px -656px;
+  background-position: -17px -988px;
 }
 
 .information {
