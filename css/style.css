@@ -524,41 +524,56 @@ ul .dropdown-inside {
   margin-right: 26px;
   background-image: url("../img/strawberry.png");
   height: 220px;
+  position: relative;
 }
 
-.blog span {
+.blog-post .blog p {
   color: #5a5a5a;
+  text-align: left;
+  padding-left: 19px;
+  padding-top: 9px;
 }
 
-.blog a {
+
+ .blog a {
   color: #353535;
-  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  top: 54px;
+  line-height: 30px;
 }
 
 .post {
   float: left;
-  width: 484px;
+  width: 532px;
+  height: 187px;
   background-image: url("../img/post.png");
   color: #323232;
-  padding: 36px 47px 28px 28px;
+  padding: 21px 0 12px 28px;
 }
 
 .mail input[type="email"] {
-  min-width: 345px;
-  min-height: 45px;
-  margin-top: 42px;
+  min-width: 360px;
+  min-height: 40px;
+  margin-top: 22px;
   margin-left: 0;
   float: left;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .mail button[type="submit"] {
   float: right;
   width: 130px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 24px;
+  padding-left: 19px;
+  padding-top: 8px;
+  padding-right: 19px;
 }
 
-.post-span {
+.post-spam {
   text-align: left;
   width: 508px;
 }
@@ -572,24 +587,32 @@ ul .dropdown-inside {
 }
 
 .coords {
-  width: 302px;
-  margin: 16px;
-  border-radius: 10px;
-  height: 306px;
+  width: 274px;
+  margin: 22px;
+  border-radius: 15px;
+  height: 289px;
   padding-left: 25px;
-  padding-top: 32px;
+  padding-top: 16px;
   position: absolute;
-  top: 55px;
-  right: 10px;
+  top: 45px;
+  right: 8px;
   background: #fdfefe;
   color: #343434;
+  font-size: 14px;
+}
+
+b {
+  font-size: 18px;
 }
 
 .btn-feedback {
-  width: 252px;
+  width: 194px;
   position: absolute;
-  bottom: 60px;
-  right: 10px;
+  bottom: 33px;
+  right: 23px;
+  height: 22px;
+  padding-left: 30px;
+  padding-top: 8px;
 }
 
 .footer {
@@ -600,6 +623,7 @@ ul .dropdown-inside {
   float: left;
   margin-right: 213px;
   width: 186px;
+  color: #ffffff;
 }
 
 .social-btn {
@@ -607,21 +631,23 @@ ul .dropdown-inside {
   width: 40px;
   height: 40px;
   font-size: 0;
-  vertical-align: top;
-  text-decoration: none;
   background: url("../img/sprite.png") no-repeat center;
+  box-shadow: inset 0 0 1px 4px rgba(194,206,199,1);
+  border-radius: 100px;
+  margin-top: 14px;
+  margin-right: 3px;
 }
 
 .social-btn-tw {
-  background-position: -17px -917px;
+  background-position: -17px -918px;
 }
 
 .social-btn-inst {
-  background-position: -17px -681px;
+  background-position: -17px -682px;
 }
 
 .social-btn-fb {
-  background-position: -17px -456px;
+  background-position: -17px -457px;
 }
 
 .social-btn-vk {
@@ -631,24 +657,88 @@ ul .dropdown-inside {
 .information {
   float: left;
   margin-right: 30px;
-  width: 250px;
+  width: 150px;
   color: #ffffff;
   font-size: 13px;
+  margin-top: 13px;
+}
+
+.provider {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.provider::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 15px;
+  height: 13px;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -20px -532px;
+}
+
+.information a {
+  color: #ffffff;
+  margin-left: 19px;
 }
 
 .document {
   float: left;
-  width: 210px;
+  width: 168px;
+  font-size: 13px;
+  margin-top: 13px;
+  margin-left: -18px;
+}
+
+.document a {
+  color: #ffffff;
 }
 
 .developer {
   float: right;
   font-size: 13px;
+  margin-right: 5px;
+}
+
+.developer p a {
+  color: #ffffff;
+}
+
+.developer p {
+  font-size: 12px;
+  margin-top: -3px;
 }
 
 .breadcrumbs li {
   display: inline-block;
   list-style: none;
+  line-height: 16px;
+  font-size: 14px;
+  margin-top: 26px;
+  text-decoration: underline;
+}
+
+.breadcrumbs li a:last-child {
+  text-decoration: none;
+}
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.breadcrumbs li a {
+   color: #ffffff;
+}
+
+.appellative {
+  font-size: 35px;
+  margin-top: 10px;
 }
 
 .sorting {
