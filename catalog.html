@@ -79,18 +79,27 @@
           <div class="choice">
             <div class="sorting">
               <h5>Сортировка</h5>
-              <div class="selection">
+              <div class="sorting-block">
                 <select name="sorting">
                   <option value="popularity">По популярности</option>
+                  <option value="low-price">сначала недорогие</option>
+                  <option value="high-price">сначала дорогие</option>
+                  <option value="fat-level">по жирности</option>
                 </select>
               </div>
             </div>
             <div class="range">
-              <h5>Цена: 100 руб. - 500 руб.</h5>
-              <div class="selection">
-                <input type="range" min="100" max="500">
+                <h5>Цена: 100 руб. – 500 руб.</h5>
+                <div class="selection-range">
+                  <div class="action-radius">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="switch switch-min"></div>
+                    <div class="switch switch-max"></div>
+                  </div>
+                </div>
               </div>
-            </div>
             <div class="fatness">
               <h5>Жирность</h5>
               <div class="selection">
