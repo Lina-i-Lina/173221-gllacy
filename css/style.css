@@ -767,7 +767,7 @@ h5 {
 
 .fatness {
   float: left;
-  width: 415px;
+  width: 417px;
 }
 
 .selection {
@@ -903,6 +903,40 @@ h5 {
 .footer {
   padding-top: 20px;
   border-top: 1px solid #ffffff;
+}
+
+body > input[type="checkbox"] {
+  display: none;
+}
+
+.topping .selection label:before{
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 11px;
+  margin-left: 11px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fatness .selection label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  vertical-align: top;
+  text-align: right;
+  margin-right: 11px;
+  margin-left: 11px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 .modal-content-search {
