@@ -1,11 +1,10 @@
 body {
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto", "Arial", "sans-serif";
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   background-color: #849d8f;
 }
-
 
 body > input[type="radio"] {
   display: none;
@@ -228,7 +227,6 @@ ul .dropdown-inside {
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .btn-gift {
@@ -377,7 +375,6 @@ ul .dropdown-inside {
   font-size: 35px;
   text-align: left;
   font-weight: bold;
-
 }
 
 .berry-gift p,
@@ -439,6 +436,7 @@ ul .dropdown-inside {
   font-size: 22px;
   top: 5px;
   left: 105px;
+  width: 30px;
 }
 
 .features {
@@ -533,8 +531,7 @@ ul .dropdown-inside {
   padding-top: 9px;
 }
 
-
- .blog a {
+.blog a {
   color: #353535;
   font-size: 24px;
   font-weight: 600;
@@ -627,30 +624,30 @@ b {
 
 .social-btn {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 31px;
+  height: 31px;
   font-size: 0;
   background: url("../img/sprite.png") no-repeat center;
-  box-shadow: inset 0 0 1px 4px rgba(194,206,199,1);
-  border-radius: 100px;
   margin-top: 14px;
   margin-right: 3px;
+  border: 3px solid rgba(194, 206, 199, 0.5);
+  border-radius: 50%;
 }
 
 .social-btn-tw {
-  background-position: -17px -918px;
+  background-position: -20px -922px;
 }
 
 .social-btn-inst {
-  background-position: -17px -682px;
+  background-position: -20px -687px;
 }
 
 .social-btn-fb {
-  background-position: -17px -457px;
+  background-position: -20px -462px;
 }
 
 .social-btn-vk {
-  background-position: -17px -988px;
+  background-position: -20px -994px;
 }
 
 .information {
@@ -738,7 +735,7 @@ b {
 }
 
 .breadcrumbs li a {
-   color: #ffffff;
+  color: #ffffff;
 }
 
 .appellative {
@@ -773,14 +770,14 @@ h5 {
 .selection {
   background-color: #a6b8ad;
   border-radius: 100px;
-  margin-left: 10px;
-  padding: 8px 12px;
+  padding: 6px 12px;
 }
 
 .topping {
   float: left;
   width: 703px;
   margin-right: 15px;
+  margin-top: 10px;
 }
 
 .btn-form {
@@ -840,7 +837,7 @@ h5 {
   text-decoration: underline;
   line-height: 22px;
   position: absolute;
-  top: 284px;
+  top: 264px;
   left: 12px;
   text-align: center;
   width: 248px;
@@ -848,10 +845,11 @@ h5 {
 
 .size {
   position: absolute;
-  font-size: 25px;
-  top: 15px;
-  left: 115px;
-  line-height: 30px;
+  font-size: 22px;
+  top: 5px;
+  left: 105px;
+
+  width: 30px;
 }
 
 .pages {
@@ -863,7 +861,10 @@ h5 {
   line-height: 40px;
   font-weight: bold;
   text-decoration: none;
+}
 
+.pages a {
+  margin-left: 17px;
 }
 
 .pages .current {
@@ -909,15 +910,15 @@ body > input[type="checkbox"] {
   display: none;
 }
 
-.topping .selection label:before{
+.topping .selection label:before {
   content: "";
   display: inline-block;
-  width: 21px;
-  height: 21px;
-  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  vertical-align: bottom;
   text-align: right;
   margin-right: 11px;
-  margin-left: 11px;
+  margin-left: 8px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 5px;
@@ -929,7 +930,7 @@ body > input[type="checkbox"] {
   display: inline-block;
   width: 17px;
   height: 17px;
-  vertical-align: top;
+  vertical-align: bottom;
   text-align: right;
   margin-right: 11px;
   margin-left: 11px;
@@ -948,10 +949,9 @@ body > input[type="checkbox"] {
   background-color: #f8f7f4;
   border-radius: 10px;
   display: none;
-
 }
 
-.search:hover .modal-content-search{
+.search:hover .modal-content-search {
   display: block;
 }
 
