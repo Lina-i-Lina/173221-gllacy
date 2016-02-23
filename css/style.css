@@ -15,6 +15,7 @@ body > input[type="radio"] {
   background-image: url("../img/ice1.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -43,7 +44,7 @@ body > input[type="radio"] {
   float: left;
   margin-top: 9px;
   width: 153px;
-  height: 63px;
+  min-height: 63px;
   margin-left: -5px;
 }
 
@@ -131,7 +132,7 @@ ul .dropdown-inside {
   top: 6px;
   right: 70px;
   width: 40px;
-  height: 22px;
+  min-height: 22px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -10px -342px;
 }
@@ -154,7 +155,7 @@ ul .dropdown-inside {
   top: 6px;
   right: 52px;
   width: 32px;
-  height: 22px;
+  min-height: 22px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -10px -402px;
 }
@@ -170,14 +171,15 @@ ul .dropdown-inside {
   top: 8px;
   right: 55px;
   width: 22px;
-  height: 22px;
+  min-height: 22px;
   background: url("../img/sprite.png") no-repeat;
-  background-position: -20px -77px;
+  background-position: -20px -78px;
 }
 
 .search {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .search::before {
@@ -186,7 +188,7 @@ ul .dropdown-inside {
   top: -14px;
   right: -5px;
   width: 30px;
-  height: 30px;
+  min-height: 30px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -15px -752px;
   background-color: #9db1a5;
@@ -199,7 +201,7 @@ ul .dropdown-inside {
   top: -14px;
   right: -5px;
   width: 30px;
-  height: 30px;
+  min-height: 30px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -15px -15px;
   background-color: #f8f7f4;
@@ -223,7 +225,6 @@ ul .dropdown-inside {
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
-  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
@@ -247,6 +248,8 @@ ul .dropdown-inside {
   text-align: right;
   line-height: 15px;
   margin-top: -10px;
+  vertical-align: baseline;
+
 }
 
 .number {
@@ -258,6 +261,7 @@ ul .dropdown-inside {
   text-align: right;
   line-height: 24px;
   margin-top: -10px;
+  vertical-align: baseline;
 }
 
 .slider {
@@ -294,7 +298,6 @@ ul .dropdown-inside {
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
-  background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
@@ -302,7 +305,6 @@ ul .dropdown-inside {
 }
 
 .slide-btn:active {
-  background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -319,7 +321,7 @@ ul .dropdown-inside {
 .slider-controls label {
   display: inline-block;
   width: 17px;
-  height: 17px;
+  min-height: 17px;
   margin-right: 8px;
   vertical-align: top;
   background-color: transparent;
@@ -367,7 +369,7 @@ ul .dropdown-inside {
   float: left;
   width: 520px;
   padding: 0 20px;
-  background-image: url(../img/chokolate.png);
+  background-image: url("../img/chokolate.png");
 }
 
 .berry-gift h2,
@@ -408,7 +410,7 @@ ul .dropdown-inside {
   content: "";
   position: absolute;
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   top: 0;
   left: 0;
   background: url("../img/sprite.png") no-repeat;
@@ -445,7 +447,7 @@ ul .dropdown-inside {
   background-image: url("../img/wafer.jpg");
   color: #323232;
   border-radius: 20px;
-  height: 255px;
+  min-height: 255px;
   position: relative;
 }
 
@@ -520,7 +522,7 @@ ul .dropdown-inside {
   width: 560px;
   margin-right: 26px;
   background-image: url("../img/strawberry.png");
-  height: 220px;
+  min-height: 220px;
   position: relative;
 }
 
@@ -543,7 +545,7 @@ ul .dropdown-inside {
 .post {
   float: left;
   width: 532px;
-  height: 187px;
+  min-height: 187px;
   background-image: url("../img/post.png");
   color: #323232;
   padding: 21px 0 12px 28px;
@@ -562,7 +564,7 @@ ul .dropdown-inside {
   float: right;
   width: 130px;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 12px;
   margin-right: 24px;
   padding-left: 19px;
   padding-top: 8px;
@@ -586,7 +588,7 @@ ul .dropdown-inside {
   width: 274px;
   margin: 22px;
   border-radius: 15px;
-  height: 289px;
+  min-height: 289px;
   padding-left: 25px;
   padding-top: 16px;
   position: absolute;
@@ -606,7 +608,7 @@ b {
   position: absolute;
   bottom: 33px;
   right: 23px;
-  height: 22px;
+  min-height: 22px;
   padding-left: 30px;
   padding-top: 8px;
 }
@@ -625,13 +627,14 @@ b {
 .social-btn {
   display: inline-block;
   width: 31px;
-  height: 31px;
+  min-height: 31px;
   font-size: 0;
   background: url("../img/sprite.png") no-repeat center;
   margin-top: 14px;
   margin-right: 3px;
   border: 3px solid rgba(194, 206, 199, 0.5);
   border-radius: 50%;
+  vertical-align: baseline;
 }
 
 .social-btn-tw {
@@ -664,6 +667,7 @@ b {
   display: inline-block;
   font-size: 13px;
   line-height: 15px;
+  vertical-align: baseline;
 }
 
 .provider::before {
@@ -672,7 +676,7 @@ b {
   top: -10px;
   left: 0;
   width: 15px;
-  height: 13px;
+  min-height: 13px;
   background: url("../img/sprite.png") no-repeat center;
   background-position: -20px -532px;
 }
@@ -716,6 +720,7 @@ b {
   font-size: 14px;
   margin-top: 26px;
   text-decoration: underline;
+  vertical-align: baseline;
 }
 
 .breadcrumbs ul li:last-child {
@@ -780,14 +785,14 @@ h5 {
 }
 
 .scale {
-  height: 4px;
+  min-height: 4px;
   margin-top: 0;
   background-color: rgba(248, 247, 244, 0.5);
 }
 
 .bar {
   width: 100px;
-  height: 4px;
+  min-height: 4px;
   margin-left: 30px;
   background: #f8f7f4;
 }
@@ -797,7 +802,7 @@ h5 {
   top: 20px;
   left: 20px;
   width: 20px;
-  height: 20px;
+  min-height: 20px;
   background: #f8f7f4;
   border-radius: 50%;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -813,7 +818,7 @@ h5 {
   top: -11px;
   left: 18px;
   width: 24px;
-  height: 24px;
+  min-height: 24px;
 }
 
 .switch-max {
@@ -825,7 +830,7 @@ h5 {
   top: -11px;
   left: 118px;
   width: 24px;
-  height: 24px;
+  min-height: 24px;
 }
 
 .fatness {
@@ -865,6 +870,7 @@ h5 {
   border-radius: 100px;
   padding: px 15px;
   border: 2px solid #ffffff;
+  vertical-align: baseline;
 }
 
 .fillers {
@@ -944,7 +950,7 @@ h5 {
   color: #353535;
   background-color: #ffffff;
   width: 28px;
-  height: 26px;
+  min-height: 26px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -954,8 +960,9 @@ h5 {
 .arrow {
   display: inline-block;
   width: 10px;
-  height: 16px;
+  min-height: 16px;
   background: url("../img/sprite.png") no-repeat;
+  vertical-align: baseline;
 }
 
 .arrow-left {
@@ -985,7 +992,7 @@ body > input[type="checkbox"] {
   content: "";
   display: inline-block;
   width: 17px;
-  height: 17px;
+  min-height: 17px;
   vertical-align: bottom;
   text-align: right;
   margin-right: 11px;
@@ -1000,7 +1007,7 @@ body > input[type="checkbox"] {
   content: "";
   display: inline-block;
   width: 17px;
-  height: 17px;
+  min-height: 17px;
   vertical-align: bottom;
   text-align: right;
   margin-right: 11px;
@@ -1016,7 +1023,7 @@ body > input[type="checkbox"] {
   top: 20px;
   right: -5px;
   width: 346px;
-  height: 69px;
+  min-height: 69px;
   background-color: #f8f7f4;
   border-radius: 10px;
   display: none;
@@ -1039,7 +1046,7 @@ body > input[type="checkbox"] {
   top: 65px;
   left: 1580px;
   width: 275px;
-  height: 177px;
+  min-height: 177px;
   padding: 20px 16px 17px 17px;
   border-radius: 15px;
   background-color: #f8f7f4;
@@ -1090,7 +1097,7 @@ body > input[type="checkbox"] {
   background-color: #f8f7f4;
   border-radius: 15px;
   width: 478px;
-  height: 444px;
+  min-height: 444px;
   padding-top: 22px;
   padding-left: 25px;
   display: none;
@@ -1108,7 +1115,7 @@ body > input[type="checkbox"] {
   top: 15px;
   left: 460px;
   width: 18px;
-  height: 18px;
+  min-height: 18px;
   font-size: 0;
 }
 
@@ -1117,16 +1124,18 @@ body > input[type="checkbox"] {
   content: "";
   position: absolute;
   width: 24px;
-  height: 3px;
+  min-height: 3px;
   background-color: #070707;
   border-radius: 1px;
 }
 
 .modal-content-close::before {
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .modal-content-close::after {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -1148,7 +1157,7 @@ body > input[type="checkbox"] {
 .message .write-to-us {
   padding: 12px 15px;
   width: 430px;
-  height: 145px;
+  min-height: 145px;
   vertical-align: top;
   border-radius: 10px;
 }
