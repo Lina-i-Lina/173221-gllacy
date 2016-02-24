@@ -7,20 +7,10 @@
   <title>Мороженое Gllacy каталог</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <input type="checkbox" name="min" id="min">
-  <input type="checkbox" name="before10" id="before10" checked>
-  <input type="checkbox" name="before30" id="before30">
-  <input type="checkbox" name="max" id="max">
-  <input type="checkbox" name="chocolate" id="chocolate" checked>
-  <input type="checkbox" name="sugar" id="sugar" checked>
-  <input type="checkbox" name="fruit" id="fruit">
-  <input type="checkbox" name="syrup" id="syrup">
-  <input type="checkbox" name="jam" id="jam">
-
   <header class="main-header">
     <div class="container clearfix">
       <div class="logo">
@@ -103,9 +93,13 @@
             <div class="fatness">
               <h5>Жирность</h5>
               <div class="selection">
+                <input type="radio" name="radio" value="min" id="min">
                 <label for="min">0%</label>
+                <input type="radio" name="radio" value="before10" id="before10" checked>
                 <label for="before10">до 10%</label>
+                <input type="radio" name="radio" value="before30" id="before30">
                 <label for="before30">до 30%</label>
+                <input type="radio" name="radio" value="max" id="max">
                 <label for="max">выше 30%</label>
               </div>
             </div>
@@ -114,15 +108,20 @@
             <div class="topping">
               <h5>Наполнители:</h5>
               <div class="selection">
+                <input type="checkbox" name="chocolate" id="chocolate" checked>
                 <label for="chocolate">шоколадные</label>
+                <input type="checkbox" name="sugar" id="sugar" checked>
                 <label for="sugar">сахарные присыпки</label>
+                <input type="checkbox" name="fruit" id="fruit">
                 <label for="fruit">фрукты</label>
+                <input type="checkbox" name="syrup" id="syrup">
                 <label for="syrup">сиропы</label>
+                <input type="checkbox" name="jam" id="jam">
                 <label for="jam">джемы</label>
               </div>
             </div>
-            <div class="btn-form">
-              <input type="submit" value="Применить">
+            <div class="btn-filter">
+              <button class="btn-form" input type="submit" value="Применить">
             </div>
           </div>
         </form>
