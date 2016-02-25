@@ -19,18 +19,18 @@ body > input[type="radio"] {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
+.site-wrapper::before,
+.site-wrapper::after {
   content: "";
   visibility: hidden;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
+.site-wrapper::before,
+.site-wrapper::after {
   background-image: url("../img/ice3.jpg");
 }
 
-.site-wrapper:after {
+.site-wrapper::after {
   background-image: url("../img/ice2.jpg");
 }
 
@@ -221,6 +221,7 @@ body > input[type="radio"] {
   position: relative;
   display: inline-block;
   vertical-align: baseline;
+  cursor: pointer;
 }
 
 .search::before {
@@ -234,6 +235,7 @@ body > input[type="radio"] {
   background-position: -15px -752px;
   background-color: #9db1a5;
   border-radius: 100px;
+  z-index: 50;
 }
 
 .search:hover::before {
@@ -247,6 +249,55 @@ body > input[type="radio"] {
   background-position: -15px -15px;
   background-color: #f8f7f4;
   color: #373737;
+}
+
+.modal-content-search {
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  width: 346px;
+  min-height: 69px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  display: none;
+  z-index: 100;
+}
+
+.search:hover .modal-content-search {
+  display: block;
+}
+
+.search-form input[type="search"] {
+  width: 300px;
+  margin: 16px;
+  border-radius: 10px;
+  height: 39px;
+  padding-left: 10px;
+  border: 1px solid #d3d3d2;
+  color: #353535;
+}
+
+.modal-content-search label {
+  position:absolute;
+  font-size:14px;
+  top:28px;
+  left:25px;
+  color:#9b9b9b;
+}
+
+.modal-content-search input:focus{
+  border:2px solid #8fbdec;
+  padding:11px;
+   height: 39px;
+  margin: 16px;
+
+}
+
+.modal-content-search input:focus + label {
+	font-size:11px;
+	top: -14px;
+	left:25px;
+	color:#8fbdec;
 }
 
 .clearfix::after {
@@ -897,7 +948,7 @@ h5 {
   display: none;
 }
 
-.topping .selection input + label:before {
+.topping .selection input + label::before {
   content: "";
   display: inline-block;
   width: 19px;
@@ -912,7 +963,7 @@ h5 {
   cursor: pointer;
 }
 
-.topping .selection input:checked + label:before {
+.topping .selection input:checked + label::before {
   content: "";
   display: inline-block;
   width: 19px;
@@ -926,7 +977,7 @@ h5 {
   cursor: pointer;
 }
 
-.fatness .selection input + label:before {
+.fatness .selection input + label::before {
   content: "";
   display: inline-block;
   width: 19px;
@@ -939,7 +990,7 @@ h5 {
   cursor: pointer;
 }
 
-.fatness .selection input:checked + label:before {
+.fatness .selection input:checked + label::before {
   content: "";
   display: inline-block;
   width: 19px;
@@ -1100,31 +1151,6 @@ h5 {
 .footer {
   padding-top: 20px;
   border-top: 1px solid #ffffff;
-}
-
-.modal-content-search {
-  position: absolute;
-  top: 20px;
-  right: -5px;
-  width: 346px;
-  min-height: 69px;
-  background-color: #f8f7f4;
-  border-radius: 10px;
-  display: none;
-}
-
-.search:hover .modal-content-search {
-  display: block;
-}
-
-.search-form input[type="text"] {
-  width: 310px;
-  margin: 16px;
-  border-radius: 10px;
-  height: 39px;
-  padding-left: 10px;
-  border: 1px solid #d3d3d2;
-  color: #353535;
 }
 
 .modal-content-login {
