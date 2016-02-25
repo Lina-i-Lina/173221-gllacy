@@ -94,15 +94,12 @@ body > input[type="radio"] {
   vertical-align: top;
   padding-left: 30px;
   margin-top: 8px;
-}
-
-.nav-item2:first-child a{
   padding: 6px 14px 7px 14px;
   border-radius: 20px;
   background: #d07058;
-  margin-top: -8px;
-  margin-left: -15px;
   text-decoration: none;
+  margin-left: 10px;
+  margin-top: 0;
 }
 
 .nav-item > a {
