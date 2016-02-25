@@ -80,7 +80,7 @@ body > input[type="radio"] {
   cursor: pointer;
   line-height: 16px;
   font-weight: 600;
-  z-index: 50;
+
 }
 
 .nav-item {
@@ -93,6 +93,16 @@ body > input[type="radio"] {
   display: inline-block;
   vertical-align: top;
   padding-left: 30px;
+  margin-top: 8px;
+}
+
+.nav-item2:first-child a{
+  padding: 6px 14px 7px 14px;
+  border-radius: 20px;
+  background: #d07058;
+  margin-top: -8px;
+  margin-left: -15px;
+  text-decoration: none;
 }
 
 .nav-item > a {
@@ -124,7 +134,6 @@ body > input[type="radio"] {
   position: absolute;
   left: 5px;
   top: 8px;
-  z-index: 100;
   width: 143px;
   list-style: none;
   margin: 0px;
@@ -136,14 +145,15 @@ body > input[type="radio"] {
 
 .dropdown-inside a {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 300;
   color: #343434;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .dropdown-inside li {
@@ -160,6 +170,7 @@ body > input[type="radio"] {
   font-weight: 700;
   color: #333333;
   border-bottom: 2px solid #d1d0ce;
+  border-radius: 10px;
 }
 
 .navigation .dropdown-inside a:hover {
